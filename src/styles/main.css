@@ -1,0 +1,93 @@
+:root {
+  color-scheme: light;
+  font-family: 'Poppins', 'Segoe UI', sans-serif;
+  background: radial-gradient(circle at center, #f7f7ff 0%, #d6e0ff 100%);
+  color: #111;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+  background: transparent;
+}
+
+#app {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+canvas {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+}
+
+.hud {
+  position: relative;
+  z-index: 2;
+  padding: 1.5rem;
+  max-width: 480px;
+  margin: 2rem;
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 24px;
+  box-shadow: 0 20px 45px rgba(17, 17, 26, 0.15);
+  backdrop-filter: blur(8px);
+  animation: float 6s ease-in-out infinite;
+}
+
+.hud h1 {
+  margin: 0 0 1rem 0;
+  font-size: 1.6rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.stats {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.stat {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.stat .label {
+  color: #6366f1;
+  margin-right: 0.3rem;
+}
+
+.cta {
+  position: relative;
+  z-index: 2;
+  padding: 1rem 2rem;
+  margin: 0 2rem 2rem;
+  align-self: flex-end;
+  max-width: 420px;
+  background: rgba(17, 17, 26, 0.75);
+  color: #fefefe;
+  border-radius: 18px;
+  box-shadow: 0 15px 30px rgba(17, 17, 26, 0.35);
+  backdrop-filter: blur(4px);
+}
+
+.cta p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}

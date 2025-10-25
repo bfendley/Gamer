@@ -1,0 +1,30 @@
+{
+  "name": "gamer",
+  "version": "1.0.0",
+  "description": "Game of the Year: Oreo the Dog Adventure",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest run"
+  },
+  "keywords": [
+    "threejs",
+    "game",
+    "oreo",
+    "vite"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.11.30",
+    "@types/three": "^0.161.0",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.10",
+    "vitest": "^1.2.2"
+  },
+  "dependencies": {
+    "three": "^0.161.0"
+  }
+}
